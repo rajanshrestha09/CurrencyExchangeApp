@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  background-image: url("https://images.pexels.com/photos/8375591/pexels-photo-8375591.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  width: calc(100% - 20px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Container Start */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+/* Container Start */
+
+/* Container > Main Start */
+.main {
+  background-color: rgba(225, 225, 225, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 10px;
+  column-gap: 20px;
+  border: 2px solid greenyellow;
+  border-radius: 15px;
+}
+/* Container > Main End */
+.currencyexchange{
+  padding: 20px;
+  border-radius: 15px;
+}
+/* Currency exchange Start */
+.currencyexchange {
+  background-color: rgba(199, 169, 169, 0.75);
+}
+
+.currencyexchange_inside {
+  margin: 10px 5px;
+}
+
+.currencyexchange:hover {
+  background-color: rgba(151, 109, 109, 0.75);
+}
+
+div.currencyexchange h1 {
+  font-size: 2rem;
+  color: bisque;
+  text-align: center;
+}
+
+div.date{
+  text-align: center;
+  padding-top: 15px;
+}
+
+div.date p{
+display: inline-block;
+font-size: 1.25rem;
+}
+
+div.date label{
+  color: wheat;
+  font-size:1.5rem;
+}
+
+div.currencyexchange_inside {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  row-gap: 10px;
+}
+
+div.currencyexchange div.amount label,
+div.currencyexchange div.conversion label,
+div.country label{
+  font-size: 1.5rem;
+  color: rgba(18, 13, 13, 0.75);
+}
+
+div.currencyexchange div.amount input,
+div.currencyexchange div.conversion input {
+  padding: 10px 5px;
+  border-radius: 5px;
+  font-size: 1.05rem;
+}
+div.conversion input {
+  color: black;
+}
+
+span.dblarrow {
+  margin: 0 5px;
+}
+
+#country_exchange,
+#country_conversion {
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+#country_exchange:hover,
+#country_conversion:hover {
+  border: 1px solid red;
+}
+
+div.btnconvert {
+  align-self: center;
+}
+
+div.btnconvert button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  background-color: rgb(87, 87, 172);
+  color: wheat;
+}
+
+div.btnconvert button:hover {
+  background-color: rgb(8, 8, 226);
+  color: white;
+}
+
+/* Currency exchange End */
+
+span.dblarrow {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  transform: rotate(90deg);
+}
+
+.weatherforcast {
+  background-color: rgba(225, 225, 225, 1);
+}
+
+.age_calculate {
+  background-color: rgba(199, 169, 169, 0.75);
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 400px) {
+  .main {
+    padding: 5px;
+    column-gap: 3px;
+  }
+
+  div.date p{
+  display: inline-block;
+  font-size: 1.15rem;
+  }
+  
+  div.date label{
+    color: wheat;
+    font-size:1.3rem;
+  }
+  
+
+  div.currencyexchange div.amount label,
+  div.currencyexchange div.conversion label,
+  div.country label {
+    font-size: 1rem;
+    color: rgba(18, 13, 13, 0.75);
+  }
+
+  div.currencyexchange div.amount input,
+  div.currencyexchange div.conversion input {
+    padding: 7px 3px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  div.currencyexchange h1 {
+    font-size: 1rem;
+  }
+
+  #country_exchange,
+#country_conversion {
+  padding: 3px 5px;
+  border-radius: 10px;
+  font-size: 0.75rem;
+}
+
+  div.currencyexchange div.amount label,
+  div.currencyexchange div.conversion label,
+  div.country label {
+    font-size: 1.05rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    padding: 5px;
+    column-gap: 10px;
+  }
+  div.currencyexchange h1 {
+    font-size: 1.5rem;
+  }
+  div.currencyexchange div.amount label,
+  div.currencyexchange div.conversion label,
+  div.country label {
+    font-size: 1.25rem;
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f0b243114d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="currencyexchange">
+                <h1>Currency Exchange</h1>
+                <div class="date">
+                    <label for="">Date:</label>
+                    <p id="date-container"></p>
+                </div>
+                <div class="currencyexchange_inside">
+                    <div class="amount">
+                        <label for="currency">Amount:</label>
+                        <input type="number" name="" id="currency" value="1">
+                    </div>
+                    <div class="country">
+                        <label for="country_exchange">Country: </label>
+                        <select name="country" id="country_exchange">
+                            <option value="USD">USD</option>
+                        </select>
+                        <span class="dblarrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                                <path
+                                    d="M182.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L128 109.3V402.7L86.6 361.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 402.7V109.3l41.4 41.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-96-96z" />
+                            </svg>
+                        </span>
+                        <select name="country" id="country_conversion">
+                            <option value="CAD">CAD</option>
+                        </select>
+                    </div>
+                    <div class="conversion">
+                        <label for="conversion">Coversion:</label>
+                        <input type="number" name="" id="conversion" disabled>
+                    </div>
+                    <div class="btnconvert">
+                        <button>Convert</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
